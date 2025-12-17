@@ -1,0 +1,123 @@
+# Resume-Latex
+
+Latex code for resume 
+format:MIT
+Content:Priyanshu Oli
+
+# Code
+%-------------------------
+% ATS Optimized One Page Resume
+% Author : Priyanshu Oli
+%-------------------------
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+
+
+\pdfgentounicode=1
+
+% Margins (tight & ATS safe)
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\textwidth}{1.3in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.55in}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\bfseries
+}{}{0em}{}[\titlerule \vspace{-6pt}]
+
+% Commands
+\newcommand{\resumeItem}[1]{\item \small{#1}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    {\Large \textbf{Priyanshu Oli}}\\
+    Dehradun, Uttarakhand \\
+    +91-7906580231 \quad
+    priyanshuoli818@gmail.com \quad
+    \href{https://www.linkedin.com/in/priyanshu-oli-17b81a205/}{LinkedIn} \quad
+    \href{https://leetcode.com/u/Error_line1/}{LeetCode}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{SUMMARY}
+Aspiring Software Engineer with strong foundations in \textbf{Machine Learning, Data Structures, and Algorithms}. Experienced in NLP-based ML systems and sentiment analysis. Proficient in C++, Python, and core computer science subjects. Seeking ML or Software Development roles.
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\resumeSubHeadingListStart
+\resumeItem{\textbf{B.Tech in Computer Science and Engineering}, Graphic Era Hill University \hfill 2022 -- Present\\
+CGPA: 7.81 / 10 \hfill Dehradun, Uttarakhand}
+\resumeItem{\textbf{Class XII (CBSE)}, Kendriya Vidyalaya ITBP \hfill 2022 \quad 90.16\%}
+\resumeItem{\textbf{Class X (CBSE)}, Kendriya Vidyalaya ITBP \hfill 2020 \quad 93.4\%}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+\resumeSubHeadingListStart
+
+\resumeItem{\textbf{Fake News Detection System} \hfill Apr 2024 -- Jun 2024
+\resumeItemListStart
+\resumeItem{Built NLP-based ML model to classify news as fake or real.}
+\resumeItem{Used text preprocessing, TF-IDF vectorization, and supervised learning.}
+\resumeItem{Achieved \textbf{98\% accuracy} using precision, recall, and F1-score.}
+\resumeItemListEnd}
+
+\resumeItem{\textbf{Unmasking Fake Applications (Sentiment Analysis)} \hfill Oct 2024 -- Dec 2024
+\resumeItemListStart
+\resumeItem{Developed sentiment analysis model using user reviews to detect fake apps.}
+\resumeItem{Implemented Logistic Regression, SVM, Naive Bayes, and Random Forest.}
+\resumeItem{Achieved \textbf{82\% accuracy}, improving app legitimacy detection.}
+\resumeItemListEnd}
+
+\resumeItem{\textbf{Mini C Compiler (Group Project)} \hfill Jan 2025 -- Apr 2025
+\resumeItemListStart
+\resumeItem{Developed Mini C Compiler performing lexical analysis using Lex.}
+\resumeItem{Displayed tokenized output using a basic React frontend.}
+\resumeItem{Collaborated using Git for version control.}
+\resumeItemListEnd}
+
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{TECHNICAL SKILLS}
+\resumeSubHeadingListStart
+\resumeItem{\textbf{Programming:} C++, C, Python, JavaScript}
+\resumeItem{\textbf{Machine Learning:} TensorFlow, scikit-learn, NLP, Sentiment Analysis}
+\resumeItem{\textbf{Web:} HTML, CSS, React (basic)}
+\resumeItem{\textbf{Databases:} MySQL}
+\resumeItem{\textbf{Core CS:} DSA, OS, DBMS, Computer Networks, Compiler Design}
+\resumeItem{\textbf{Tools:} Git, GitHub, MS Office}
+\resumeSubHeadingListEnd
+
+%-----------CODING PROFILE-----------
+\section{CODING PROFILE}
+\resumeSubHeadingListStart
+\resumeItem{LeetCode: Solved \textbf{300+ problems} across arrays, strings, trees, graphs, recursion, and DP.}
+\resumeItem{GeeksforGeeks: Solved \textbf{80+ problems} focusing on core DSA topics.}
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{ACHIEVEMENTS \& RESPONSIBILITY}
+\resumeSubHeadingListStart
+\resumeItem{National-level Table Tennis player, represented region in KVS Nationals.}
+\resumeItem{SWAYAM NPTEL Certified in Ethical Hacking.}
+\resumeItem{NSS Member – demonstrated leadership and teamwork.}
+\resumeSubHeadingListEnd
+
+\end{document}
